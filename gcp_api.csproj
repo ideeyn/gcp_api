@@ -4,6 +4,9 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier> <!-- Required for Cloud Run -->
+    <PublishSingleFile>true</PublishSingleFile> <!-- Optional: Publish as a single file -->
+    <SelfContained>false</SelfContained> <!-- Optional: Set to true if you want a self-contained deployment -->
   </PropertyGroup>
 
   <ItemGroup>
