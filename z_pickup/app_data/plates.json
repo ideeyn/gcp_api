@@ -1,0 +1,102 @@
+[
+    {
+        "code": "B 1234 ABC",
+        "vehicleCode": "V12",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "JK 5678 DEF",
+        "vehicleCode": "V12",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "BT 9012 GHI",
+        "vehicleCode": "V12",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "S 3456 JKL",
+        "vehicleCode": "V37",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "B 7890 MNO",
+        "vehicleCode": "V37",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "JK 4321 PQR",
+        "vehicleCode": "V37",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "BT 8765 STU",
+        "vehicleCode": "V37",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "S 6543 VWX",
+        "vehicleCode": "V37",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "B 9087 YZA",
+        "vehicleCode": "V45",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "JK 3210 BCD",
+        "vehicleCode": "V45",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "BT 2109 EFG",
+        "vehicleCode": "V45",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "S 5432 HIJ",
+        "vehicleCode": "V45",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "B 8764 KLM",
+        "vehicleCode": "V83",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "JK 7654 NOP",
+        "vehicleCode": "V83",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "BT 5432 QRS",
+        "vehicleCode": "V83",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "S 9876 TUV",
+        "vehicleCode": "V19",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "B 2108 WXY",
+        "vehicleCode": "V19",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "JK 3021 ZAB",
+        "vehicleCode": "V58",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "BT 9087 CDE",
+        "vehicleCode": "V58",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    },
+    {
+        "code": "S 8901 FGH",
+        "vehicleCode": "V58",
+        "updatedOn": "2025-01-18T12:45:00Z"
+    }
+]

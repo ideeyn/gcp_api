@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "FTxMyJlWa0gQckCrUWx2cONm9Q6lwlDVOiK5aoaJe8E=",
+  "Source": "gcp_api",
+  "BasePath": "_content/gcp_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,254 @@
+[
+    {
+        "userId": "1023",
+        "name": "Adi Prasetyo",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "2015",
+        "name": "Lukman",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "3047",
+        "name": "Budi Santoso",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "4098",
+        "name": "Abdul Karim",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "5201",
+        "name": "Agung",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "6154",
+        "name": "Rahmat Hidayat",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "7296",
+        "name": "Siti Aminah",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "8365",
+        "name": "Ahmad Fauzi",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "9473",
+        "name": "Yusuf",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "1058",
+        "name": "Kartini",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "2134",
+        "name": "Dwi Setiawan",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "3279",
+        "name": "Hafiz",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "4986",
+        "name": "Fikri Maulana",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "6027",
+        "name": "Novi Purnama",
+        "factoryCode": "F104",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "7094",
+        "name": "Farhan",
+        "factoryCode": "F478",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "8231",
+        "name": "Wayan Suparman",
+        "factoryCode": "F478",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "9025",
+        "name": "Made Antara",
+        "factoryCode": "F478",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "1038",
+        "name": "Kadek",
+        "factoryCode": "F478",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "2158",
+        "name": "Abdul Rahman",
+        "factoryCode": "F478",
+        "updatedOn": "2025-01-18T13:00:00Z"
+    },
+    {
+        "userId": "1034",
+        "name": "Rizki Pratama",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "2048",
+        "name": "Hadi",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "3057",
+        "name": "Nur Hidayah",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "4081",
+        "name": "Irfan Saputra",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "5123",
+        "name": "Abdul Malik",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "6174",
+        "name": "Putri Lestari",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "7256",
+        "name": "Zaki",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "8367",
+        "name": "Muhammad Fadli",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "9482",
+        "name": "Sri Wahyuni",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "1028",
+        "name": "Fauzan",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "2153",
+        "name": "Khadijah",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "3295",
+        "name": "Adi Gunawan",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "4392",
+        "name": "Rahmawati",
+        "factoryCode": "F391",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "5407",
+        "name": "Yuda Prasetya",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "6214",
+        "name": "Miftahul",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "7348",
+        "name": "Fadilah",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "8293",
+        "name": "Rahmat Gunawan",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "9020",
+        "name": "Dewi Rahayu",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "1032",
+        "name": "Abdul Hakim",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "2107",
+        "name": "Bagas Santoso",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "3175",
+        "name": "Anisa",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "4129",
+        "name": "Akbar Fauzan",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    },
+    {
+        "userId": "5203",
+        "name": "Hanafi",
+        "factoryCode": "F256",
+        "updatedOn": "2025-01-18T13:20:00Z"
+    }
+]

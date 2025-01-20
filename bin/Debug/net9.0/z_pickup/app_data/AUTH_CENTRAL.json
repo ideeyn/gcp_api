@@ -1,0 +1,18 @@
+[
+  {
+    "userId": "1124",
+    "username": "Adam Smith",
+    "password": "4d4m4d4m",
+    "AD_username": "adam.smith",
+    "AD_password": "microsoft@dam",
+    "apiKey": "zXOKbeQ5wIlclT7adCTwSiNNlXcK2HNu||TzGRvDGWhuYOiG9JCltkOEFfEE2egHww||BzdrSQp2JOs4Bmw1Rq5ASZgZPUVTx9zy||Il9YwFFI4FYYwaqXIEXGOOZtwwNKHTiC||oYFK7aDZhx0e9EOJ35WmRgbsfqWv0Oye"
+  },
+  {
+    "userId": "9966",
+    "username": "I am Admin",
+    "password": "admin123",
+    "AD_username": "i.am.admin",
+    "AD_password": "microsoft@dmin",
+    "apiKey": ""
+  }
+]

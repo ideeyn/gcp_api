@@ -1,0 +1,26 @@
+[
+    {
+        "code": "F104",
+        "name": "Jakarta Factory",
+        "vehicles": "V12||V37||V83||V19",
+        "updatedOn": "2025-01-18T12:30:00Z"
+    },
+    {
+        "code": "F256",
+        "name": "Surabaya Factory",
+        "vehicles": "V58||V19||V45||V83",
+        "updatedOn": "2025-01-18T12:30:00Z"
+    },
+    {
+        "code": "F391",
+        "name": "Batam Factory",
+        "vehicles": "V19||V83||V37",
+        "updatedOn": "2025-01-18T12:30:00Z"
+    },
+    {
+        "code": "F478",
+        "name": "Bali Factory",
+        "vehicles": "V12||V45",
+        "updatedOn": "2025-01-18T12:30:00Z"
+    }
+]

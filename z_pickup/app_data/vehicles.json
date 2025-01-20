@@ -1,0 +1,32 @@
+[
+    {
+        "code": "V12",
+        "name": "Pickup",
+        "updatedOn": "2025-01-18T12:00:00Z"
+    },
+    {
+        "code": "V37",
+        "name": "Truck",
+        "updatedOn": "2025-01-18T12:00:00Z"
+    },
+    {
+        "code": "V58",
+        "name": "Boat",
+        "updatedOn": "2025-01-18T12:00:00Z"
+    },
+    {
+        "code": "V19",
+        "name": "Viar Motor",
+        "updatedOn": "2025-01-18T12:00:00Z"
+    },
+    {
+        "code": "V83",
+        "name": "Dump",
+        "updatedOn": "2025-01-18T12:00:00Z"
+    },
+    {
+        "code": "V45",
+        "name": "Lorry",
+        "updatedOn": "2025-01-18T12:00:00Z"
+    }
+]

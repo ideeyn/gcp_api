@@ -1,0 +1,284 @@
+[
+    {
+        "userId": "1025",
+        "name": "Hendra",
+        "zoneCode": "Z14",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "2034",
+        "name": "Siti Nurhaliza",
+        "zoneCode": "Z14",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "3058",
+        "name": "Fahmi",
+        "zoneCode": "Z14",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "4073",
+        "name": "Rahmawati",
+        "zoneCode": "Z27",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "5129",
+        "name": "Nurul Huda",
+        "zoneCode": "Z27",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "6231",
+        "name": "Aisyah",
+        "zoneCode": "Z27",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "7298",
+        "name": "Faisal",
+        "zoneCode": "Z38",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "8034",
+        "name": "Farhan Pratama",
+        "zoneCode": "Z38",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "9047",
+        "name": "Anisa",
+        "zoneCode": "Z38",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "1098",
+        "name": "Abdul Wahab",
+        "zoneCode": "Z49",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "2157",
+        "name": "Kartini",
+        "zoneCode": "Z49",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "3076",
+        "name": "Bagas Prasetyo",
+        "zoneCode": "Z51",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "4079",
+        "name": "Lukman Hakim",
+        "zoneCode": "Z51",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "5092",
+        "name": "Dewi Purnama",
+        "zoneCode": "Z51",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "6213",
+        "name": "Agus Santoso",
+        "zoneCode": "Z62",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "7245",
+        "name": "Ahmad Fauzi",
+        "zoneCode": "Z62",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "8093",
+        "name": "Rizki Andika",
+        "zoneCode": "Z73",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "9032",
+        "name": "Putri Ayu",
+        "zoneCode": "Z73",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "1026",
+        "name": "Aulia Rahman",
+        "zoneCode": "Z73",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "2045",
+        "name": "Zainal Abidin",
+        "zoneCode": "Z84",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "3059",
+        "name": "Fikri",
+        "zoneCode": "Z84",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "4038",
+        "name": "Nur Azizah",
+        "zoneCode": "Z84",
+        "updatedOn": "2025-01-18T13:45:00Z"
+    },
+    {
+        "userId": "1102",
+        "name": "Andi",
+        "zoneCode": "Z95",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "2036",
+        "name": "Siti Aminah",
+        "zoneCode": "Z95",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "3098",
+        "name": "Rahmat Hakim",
+        "zoneCode": "Z95",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "4123",
+        "name": "Fauziah",
+        "zoneCode": "Z16",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "5267",
+        "name": "Ali Akbar",
+        "zoneCode": "Z16",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "6103",
+        "name": "Putri Ayu",
+        "zoneCode": "Z28",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "7184",
+        "name": "Ahmad Fauzan",
+        "zoneCode": "Z28",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "8045",
+        "name": "Dewi Lestari",
+        "zoneCode": "Z39",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "9021",
+        "name": "Bagus Prasetyo",
+        "zoneCode": "Z39",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "1003",
+        "name": "Aisyah Putri",
+        "zoneCode": "Z41",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "2159",
+        "name": "Hendra Kusuma",
+        "zoneCode": "Z41",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "3092",
+        "name": "Nur Azizah",
+        "zoneCode": "Z52",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "4127",
+        "name": "Farhan Pratama",
+        "zoneCode": "Z52",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "5274",
+        "name": "Agus Santoso",
+        "zoneCode": "Z63",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "6183",
+        "name": "Zainal Abidin",
+        "zoneCode": "Z63",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "7216",
+        "name": "Nurul Huda",
+        "zoneCode": "Z74",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "8029",
+        "name": "Rahmatullah",
+        "zoneCode": "Z74",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "9145",
+        "name": "Fikri",
+        "zoneCode": "Z85",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "1039",
+        "name": "Lukman Hakim",
+        "zoneCode": "Z85",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "2041",
+        "name": "Aulia Rahman",
+        "zoneCode": "Z96",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "3158",
+        "name": "Dewi Purnama",
+        "zoneCode": "Z96",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "4071",
+        "name": "Ahmad Fauzi",
+        "zoneCode": "Z18",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "5189",
+        "name": "Rahmawati",
+        "zoneCode": "Z29",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "6238",
+        "name": "Kartini",
+        "zoneCode": "Z31",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    },
+    {
+        "userId": "7347",
+        "name": "Lukmanul Hakim",
+        "zoneCode": "Z31",
+        "updatedOn": "2025-01-18T14:15:00Z"
+    }
+]

@@ -1,0 +1,11 @@
+[
+    {
+        "app_code": 14,
+        "app_name": "pickup_app",
+        "deprecated_version": "1.0.0",
+        "minimum_version": "1.1.0",
+        "newest_version": "1.2.0",
+        "message": "first message||second message",
+        "updatedOn": "2025-01-15T10:00:00Z"
+    }
+]
