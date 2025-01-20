@@ -1,40 +1,49 @@
 name: Deploy to Cloud Run
 
+env:
+  SERVICE_NAME: github-action-gcpapi
+  PROJECT_ID: ideeyn-api
+  DOCKER_IMAGE_URL: asia-southeast2-docker.pkg.dev/ideeyn-api/github-action-gcpapi # Adjust this to fit your project
+
 on:
   push:
     branches:
-      - main # Change this to your default branch if different
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  deploy:
+  dockerize-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v1
+      - name: Google Cloud Auth
+        uses: "google-github-actions/auth@v2"
         with:
-          dotnet-version: "9.0.101"
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
+          project_id: ${{ env.PROJECT_ID }}
 
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Set up Cloud SDK
+        uses: "google-github-actions/setup-gcloud@v2"
 
-      - name: Build
-        run: dotnet build --configuration Release
+      - name: Configure Docker
+        run: |
+          gcloud auth configure-docker us-central1-docker.pkg.dev
 
-      - name: Publish
-        run: dotnet publish --configuration Release --output ./publish
+      - name: Build and Push Docker Image
+        run: |
+          docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest -f Dockerfile.prod .
+          docker push ${{ env.DOCKER_IMAGE_URL }}:latest
 
       - name: Deploy to Cloud Run
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-          PROJECT_ID: ${{ secrets.PROJECT_ID }}
-          SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
-          REGION: ${{ secrets.REGION }}
         run: |
-          echo "${GOOGLE_APPLICATION_CREDENTIALS}" > ${HOME}/gcloud-key.json
-          gcloud auth activate-service-account --key-file=${HOME}/gcloud-key.json
-          gcloud config set project $PROJECT_ID
-          gcloud run deploy $SERVICE_NAME --image gcr.io/$PROJECT_ID/$SERVICE_NAME --platform managed --region $REGION --allow-unauthenticated
+          echo SERVICE_NAME $SERVICE_NAME
+          gcloud run deploy $SERVICE_NAME \
+            --image ${{ env.DOCKER_IMAGE_URL }}:latest \
+            --platform managed \
+            --region asia-southeast2 \
+            --allow-unauthenticated
