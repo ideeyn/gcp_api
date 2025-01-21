@@ -50,8 +50,8 @@ jobs:
 
       - name: Deploy to Cloud Run
         run: |
-          echo SERVICE_NAME: SERVICE_NAME
-          gcloud run deploy SERVICE_NAME \
+          echo SERVICE_NAME: ${{ env.SERVICE_NAME }}
+          gcloud run deploy ${{ env.SERVICE_NAME }} \
           --image ${{ env.DOCKER_IMAGE_URL }}:latest \
           --platform managed \
           --region asia-southeast2 \
