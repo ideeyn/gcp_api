@@ -32,7 +32,10 @@ jobs:
 
       - name: Configure Docker
         run: |
+          gcloud auth login
           gcloud auth configure-docker asia-southeast2-docker.pkg.dev
+          gcloud auth print-access-token
+          docker login -u oauth2accesstoken --password-stdin https://asia-southeast2-docker.pkg.dev
 
       - name: Build and Push Docker Image
         run: |
