@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "zKPccjoONV0=",
+  "dgSpecHash": "+pMXC5HTr3A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj",
+  "projectFilePath": "c:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ideeyn\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "C:\\Users\\ideeyn\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\ideeyn\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.0\\microsoft.net.illink.tasks.9.0.0.nupkg.sha512",
+    "C:\\Users\\ideeyn\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\ideeyn\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\9.0.0\\microsoft.netcore.app.host.linux-x64.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }

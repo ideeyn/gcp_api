@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj": {}
+    "c:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj": {
+    "c:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj",
+        "projectUniqueName": "c:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj",
         "projectName": "gcp_api",
-        "projectPath": "C:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj",
+        "projectPath": "c:\\Users\\ideeyn\\FREELANCE\\gcp_api\\gcp_api.csproj",
         "packagesPath": "C:\\Users\\ideeyn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ideeyn\\FREELANCE\\gcp_api\\obj\\",
+        "outputPath": "c:\\Users\\ideeyn\\FREELANCE\\gcp_api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ideeyn\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -47,6 +47,12 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -60,6 +66,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[9.0.0, 9.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -69,6 +81,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }

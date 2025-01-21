@@ -1,19 +1,30 @@
-FROM python:3.12-slim
+# Use the official .NET SDK image to build the application
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 
-ENV PYTHONUNBUFFERED True
+# Set the working directory
+WORKDIR /app
 
-# set the working directory
-WORKDIR /usr/src/app
+# Copy the project file and restore dependencies
+COPY *.csproj ./
+RUN dotnet restore
 
-# install dependencies
-COPY ./requirements.txt ./
+# Copy the rest of the application code
+COPY . ./
 
-RUN pip install --no-cache-dir -r requirements.txt
+# Build the application
+RUN dotnet publish -c Release -o out
 
-# copy src code
-COPY ./src ./src
+# Use the official ASP.NET runtime image to run the application
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 
-EXPOSE 4000
+# Set the working directory
+WORKDIR /app
 
-# start the server
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "4000", "--proxy-headers"]
+# Copy the built application from the build stage
+COPY --from=build /app/out .
+
+# Expose the port the app runs on
+EXPOSE 80
+
+# Start the application
+ENTRYPOINT ["dotnet", "YourProjectName.dll"]
