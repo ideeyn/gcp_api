@@ -1,9 +1,9 @@
 name: Deploy to Cloud Run
 
 env:
-  SERVICE_NAME: artifact-gcp-api
+  SERVICE_NAME: github-action-gcpapi
   PROJECT_ID: ideeyn-api
-  DOCKER_IMAGE_URL: asia-southeast2-docker.pkg.dev/ideeyn-api/github-action-gcpapi
+  DOCKER_IMAGE_URL: asia-southeast2-docker.pkg.dev/ideeyn-api/artifact-gcp-api
 
 on:
   push:
