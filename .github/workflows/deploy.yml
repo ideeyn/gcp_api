@@ -34,21 +34,19 @@ jobs:
         run: |
           gcloud artifacts repositories list --location=asia-southeast2
 
-      - name:
-          Configure Docker
-          # gcloud auth login --no-launch-browser
-          # 4/0AanRRrt_dKyGfigPIWAngmQoNnvX0ALAMs82gOeIWDIr8BIb4eMlIcdBYrQe3ugx-grAZQ
-          # gcloud auth print-access-token
-          # docker login -u oauth2accesstoken --password-stdin https://asia-southeast2-docker.pkg.dev
+      - name: Configure Docker
         run: |
           gcloud auth configure-docker asia-southeast2-docker.pkg.dev
+        # gcloud auth login --no-launch-browser
+        # 4/0AanRRrt_dKyGfigPIWAngmQoNnvX0ALAMs82gOeIWDIr8BIb4eMlIcdBYrQe3ugx-grAZQ
+        # gcloud auth print-access-token
+        # docker login -u oauth2accesstoken --password-stdin https://asia-southeast2-docker.pkg.dev
 
-      - name:
-          Build and Push Docker Image
-          # docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest .
-          # docker push ${{ env.DOCKER_IMAGE_URL }}:latest
+      - name: Build and Push Docker Image
         run: |
           gcloud builds submit --tag ${{ env.DOCKER_IMAGE_URL }} .
+        # docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest .
+        # docker push ${{ env.DOCKER_IMAGE_URL }}:latest
 
       - name: Deploy to Cloud Run
         run: |
