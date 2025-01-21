@@ -3,7 +3,7 @@ name: Deploy to Cloud Run
 env:
   SERVICE_NAME: github-action-gcpapi
   PROJECT_ID: ideeyn-api
-  DOCKER_IMAGE_URL: asia-southeast2-docker.pkg.dev/ideeyn-api/github-action-gcpapi # Adjust this to fit your project
+  DOCKER_IMAGE_URL: asia-southeast2-docker.pkg.dev/ideeyn-api/github-action-gcpapi
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Google Cloud Auth
         uses: "google-github-actions/auth@v2"
         with:
-          credentials_json: '{"type": "service_account","project_id": "ideeyn-api","private_key_id": "6892385d3cd0dc43653ac03880d975ff6314babd","private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDR0S4S1urYdEd/\nuWcqdP3jcXZZc69FSoi624qdXYCqyOlAi88/7UZiMIC0M1mxgLxvy+fypIcY9dV3\nR4rBl0M6Uu8Tdewll3NTwkxbGeRLMSo0/XFf+4rcAPqbEC4npF5pVHSk1s17mYiB\n6B/cEyKnismd1bnOG2qlhsbSuYL/gHtDezwnWV6dmopsdp7tjjimONnXA8aSR18V\nAAhh1V7wq/Ii/lOIOnJy0pP0QG5JAgQZ2jyaoZ++Fn4l3NPk4K5PPp1/an3V0LMR\njCprlShVbXFVvu94A2B45NhmC2qeMlEp8kZLnRjRqg8PKbYsMod68QwMUorl8R76\nNuLYnGKhAgMBAAECggEABnq2kN8vX/tFh9keCZGEw4HKBC64eO/5hWZ1JylbgU6o\ndhlpL0/ap4qol1QCgRrc+tl30IJWYBHbp3ILi9FZ2ojEDHh00Cd/YKTScIHl9wDZ\n9SpmVl7PY75RnuEw0TFkJ13b5ykhXee8p4kXZoeWX2jXs4CtmvLlm/5ruHdBT3Y6\nEsxT2KN1jMn6yUyJXULv5no2ueXVvsEpOfOanw9d2G1NeKB0wUnkshXM2vGfW41G\nmqJzIMe+Nfd8qikWCgdshbZ8L1OuTVFi/S/MKlREKBlgT2PHbHjw/5YbDrC5NLFq\n3K/Le7CQeASH89Ng+J3YiKNjtreS1/73QB0tZRMCgQKBgQD4mNj8eOveBYyzRYSS\nJNpLTRh5EUHn56pXTnyhl4MPBceTikuPip5ykkP08mWrrVR49ikuqMUXwZ8DNZ9R\nDAeGXESaM7kcET62VXu5OLOaFMyM5CjGsQVuxJbzzUWOwzOodf7wXWNsNhRjwJfE\nVd3pIInHCYU8jULaXZOxpV83IQKBgQDYELKacZL6ueUTp7iO9j3JcXIpNGX/r3Ok\naeIhftXD3p6TG4QZ3hYQ9tcJk9ZFaAxggNGInOcfQIGZSSf4aiofyvj7dQqH1Ior\nTlb02lx0zxwRR3UY6gwcamJbyzgybRHKtk9wm0Sptzoj40BKyQ9njG3HZx0BDQ8E\n3py3XU07gQKBgQCUuZzXLuCtq1RJzEVLyZBvjGgfxhtPymE2alZVtndJ/YMw2YPr\nFFtG4AqX+Iyq8L+gvmRU7dM8KzIekW4G5tN5pqnENz1/dTG3k9y5KxsIC3l0sOtU\nM4O0iRhmM2Bx0IaPOkiTNMvOaWw5YXdqlpR0bGsBEMkNONXOHj3GAdG9AQKBgQCN\nHjrIzK0mvQt1TvInzYSFcWcSqnqECOAK3m0nW2PazifcBPi+vGLFKbNBOiGUq2SK\nExjHlVMPAl6i8zj78rsYkMUV11fNZ2/m4P/CZGxGjo7Sak18vEC0vncHZS+LH9mj\nAHfaIE80WcvLbL2tGqzJANsihaJX8WOB1rOcv3+WAQKBgQCVSKmyPZoWJn6yHH4U\nLEQTEeUJ8ep0fMujNsroH99GRvRWVeVGgPe5n6UgH9T+nJ1GsFRLBXM0hT4z5cDp\nu969e9FgjUepYnTr2qXdNz5unJotQ6fzg5SXf81/Izp8028GlL8mzLGke8/Aij/Y\nH0Wh5tBH+5bzIjy1TaD0TMJHQg==\n-----END PRIVATE KEY-----\n","client_email": "github-action-gcpapi@ideeyn-api.iam.gserviceaccount.com","client_id": "103310730250381193035","auth_uri": "https://accounts.google.com/o/oauth2/auth","token_uri": "https://oauth2.googleapis.com/token","auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-action-gcpapi%40ideeyn-api.iam.gserviceaccount.com","universe_domain": "googleapis.com"}'
+          credentials_json: "${{ secrets.GCPAPI_CLOUDRUN_KEY }}"
           project_id: ${{ env.PROJECT_ID }}
 
       - name: Set up Cloud SDK
@@ -41,8 +41,8 @@ jobs:
 
       - name: Deploy to Cloud Run
         run: |
-          echo "SERVICE_NAME: ${{ env.SERVICE_NAME }}"
-          gcloud run deploy ${{ env.SERVICE_NAME }} \
+          echo SERVICE_NAME: SERVICE_NAME
+          gcloud run deploy SERVICE_NAME \
           --image ${{ env.DOCKER_IMAGE_URL }}:latest \
           --platform managed \
           --region asia-southeast2 \

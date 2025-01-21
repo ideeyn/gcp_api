@@ -14,8 +14,11 @@ COPY . ./
 # Build the application
 RUN dotnet publish -c Release -o out
 
+#!##############################################################################
+
 # Use the official ASP.NET runtime image to run the application
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
+# FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 
 
 # Set the working directory
 WORKDIR /app
@@ -24,7 +27,7 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 # Expose the port the app runs on
-EXPOSE 80
+# EXPOSE 80
 
 # Start the application
-ENTRYPOINT ["dotnet", "YourProjectName.dll"]
+ENTRYPOINT ["dotnet", "gcp_api.dll"]
