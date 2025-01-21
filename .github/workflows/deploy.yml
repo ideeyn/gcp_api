@@ -30,10 +30,11 @@ jobs:
       - name: Set up Cloud SDK
         uses: "google-github-actions/setup-gcloud@v2"
 
-      - name: Configure Docker
+      - name:
+          Configure Docker
+          # gcloud auth login --no-launch-browser
+          # 4/0AanRRrt_dKyGfigPIWAngmQoNnvX0ALAMs82gOeIWDIr8BIb4eMlIcdBYrQe3ugx-grAZQ
         run: |
-          gcloud auth login --no-launch-browser
-          4/0AanRRrt_dKyGfigPIWAngmQoNnvX0ALAMs82gOeIWDIr8BIb4eMlIcdBYrQe3ugx-grAZQ
           gcloud auth configure-docker asia-southeast2-docker.pkg.dev
           gcloud auth print-access-token
           docker login -u oauth2accesstoken --password-stdin https://asia-southeast2-docker.pkg.dev
