@@ -8,7 +8,7 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-# Copy the rest of the application codee
+# Copy the rest of the application code
 COPY . ./
 
 # Build the application
