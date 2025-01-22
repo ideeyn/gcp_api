@@ -63,3 +63,4 @@ jobs:
           --platform managed \
           --region ${{env.REGION}} \
           --allow-unauthenticated
+          --timeout=1200s
