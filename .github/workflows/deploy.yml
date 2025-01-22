@@ -46,17 +46,17 @@ jobs:
           --description="Repository for GitHub Actions deployment"
           gcloud artifacts repositories list --location=${{env.REGION}}
 
-      - name: Configure Docker, Build and Push Docker Image
-        run: |
-          gcloud auth configure-docker ${{env.DOCKER_NAME}}
-          docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest -f Dockerfile .
-          docker push ${{ env.DOCKER_IMAGE_URL }}:latest
-
-      # - name: Build and Push with Cloud Build
+      # - name: Configure Docker, Build and Push Docker Image
       #   run: |
-      #     gcloud builds submit \
-      #     --tag ${{ env.DOCKER_IMAGE_URL }}:latest \
-      #     --project ${{ env.PROJECT_ID }}
+      #     gcloud auth configure-docker ${{env.DOCKER_NAME}}
+      #     docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest -f Dockerfile .
+      #     docker push ${{ env.DOCKER_IMAGE_URL }}:latest
+
+      - name: Build and Push with Cloud Build
+        run: |
+          gcloud builds submit \
+          --tag ${{ env.DOCKER_IMAGE_URL }}:latest \
+          --project ${{ env.PROJECT_ID }}
 
       - name: Deploy to Cloud Run
         run: |
@@ -66,5 +66,4 @@ jobs:
           --platform managed \
           --region ${{env.REGION}} \
           --allow-unauthenticated \
-          --timeout=1200s \
-          --set-env-vars "PORT=8080"
+          --timeout=1200s
