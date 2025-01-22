@@ -2,8 +2,12 @@ name: Deploy to Cloud Run
 
 env:
   SERVICE_NAME: github-action-gcpapi
+  REGION: asia-southeast2
+  DOCKER_NAME: ${{env.REGION}}-docker.pkg.dev
   PROJECT_ID: ideeyn-api
-  DOCKER_IMAGE_URL: asia-southeast2-docker.pkg.dev/ideeyn-api/artifact-gcp-api2/customable-name
+  REPOSITORY_NAME: repo-gcpapi
+  IMAGE_NAME: customable-name
+  DOCKER_IMAGE_URL: ${{env.DOCKER_NAME}}/${{env.PROJECT_ID}}/${{env.REPOSITORY_NAME}}/${{env.IMAGE_NAME}}
 
 on:
   push:
@@ -30,23 +34,26 @@ jobs:
       - name: Set up Cloud SDK
         uses: "google-github-actions/setup-gcloud@v2"
 
+      - name: Ensure Artifact Registry Exists
+        run: |
+          gcloud artifacts repositories describe ${{env.SERVICE_NAME}} --location=${{env.REGION}} || \
+          gcloud artifacts repositories create github-action-gcpapi \
+          --repository-format=docker \
+          --location=${{env.REGION}} \
+          --description="Repository for GitHub Actions deployment"
+
       - name: Check Artifact Registry Permissions
         run: |
-          gcloud artifacts repositories list --location=asia-southeast2
+          gcloud artifacts repositories list --location=${{env.REGION}}
 
       - name: Configure Docker
         run: |
-          gcloud auth configure-docker asia-southeast2-docker.pkg.dev
-        # gcloud auth login --no-launch-browser
-        # 4/0AanRRrt_dKyGfigPIWAngmQoNnvX0ALAMs82gOeIWDIr8BIb4eMlIcdBYrQe3ugx-grAZQ
-        # gcloud auth print-access-token
-        # docker login -u oauth2accesstoken --password-stdin https://asia-southeast2-docker.pkg.dev
+          gcloud auth configure-docker ${{env.DOCKER_NAME}}
 
       - name: Build and Push Docker Image
         run: |
           docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest .
           docker push ${{ env.DOCKER_IMAGE_URL }}:latest
-        # gcloud builds submit --tag ${{ env.DOCKER_IMAGE_URL }} .
 
       - name: Deploy to Cloud Run
         run: |
@@ -54,5 +61,5 @@ jobs:
           gcloud run deploy ${{ env.SERVICE_NAME }} \
           --image ${{ env.DOCKER_IMAGE_URL }}:latest \
           --platform managed \
-          --region asia-southeast2 \
+          --region ${{env.REGION}} \
           --allow-unauthenticated
