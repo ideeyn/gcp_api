@@ -37,16 +37,13 @@ jobs:
       - name: Set up Cloud SDK
         uses: "google-github-actions/setup-gcloud@v2"
 
-      - name: Ensure Artifact Registry Exists
+      - name: Ensure Artifact Repository Exists
         run: |
           gcloud artifacts repositories describe ${{env.REPOSITORY_NAME}} --location=${{env.REGION}} || \
           gcloud artifacts repositories create ${{env.REPOSITORY_NAME}} \
           --repository-format=docker \
           --location=${{env.REGION}} \
           --description="Repository for GitHub Actions deployment"
-
-      - name: Check Artifact Registry Permissions
-        run: |
           gcloud artifacts repositories list --location=${{env.REGION}}
 
       - name: Configure Docker
@@ -55,7 +52,7 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest .
+          docker build -t ${{ env.DOCKER_IMAGE_URL }}:latest -f Dockerfile .
           docker push ${{ env.DOCKER_IMAGE_URL }}:latest
 
       - name: Deploy to Cloud Run
